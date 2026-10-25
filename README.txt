@@ -1,4 +1,4 @@
-Tasbih Go — versi 21 (Penghitung dzikir real-time terhubung)
+Tasbih Go — versi 1 (Penghitung dzikir real-time terhubung)
 
 Yang diperbarui:
 - Supabase Project URL dan Publishable key telah dimasukkan ke aplikasi.
