@@ -1,34 +1,16 @@
-Tasbih Go — versi 1 (Penghitung dzikir real-time terhubung)
+# Tasbih Go 🕌
 
-Yang diperbarui:
-- Supabase Project URL dan Publishable key telah dimasukkan ke aplikasi.
-- Indikator “X orang sedang berdzikir” menggunakan Supabase Realtime Presence.
-- Sesi menjadi aktif setelah pengguna mengetuk tombol hitung atau menyentuh/ menggeser manik.
-- Sesi dihitung aktif selama dua menit sejak aktivitas dzikir terakhir; setelah itu ditandai tidak aktif.
-- Tidak mengirim nama, email, atau data identitas. Hanya status aplikasi, boolean aktivitas, dan timestamp aktivitas.
-- Semua audio, logo, favicon, ikon aplikasi, dan font dari versi sebelumnya tetap disertakan.
+**Tasbih Go — A Simple Digital Tasbih App**
 
-PENTING:
-- Nilai yang ditanamkan hanya Project URL dan Publishable key, yang memang ditujukan untuk koneksi browser. Jangan pernah menambahkan Secret key atau service_role key ke HTML publik.
-- Karena ini file HTML statis, nilai NEXT_PUBLIC_ tidak perlu didefinisikan sebagai environment variable build; konfigurasi sudah langsung disetel pada script.
-- Penghitung akan berfungsi jika Supabase Realtime aktif dan project dapat diakses.
+Tasbih Go is a digital tasbih application designed to make daily dhikr easier, more practical, and accessible. Built with a clean and intuitive interface, the app brings a simple digital experience to a meaningful daily spiritual practice.
 
-Cara memakai:
-1. Unggah seluruh isi folder/ZIP ini ke root proyek Vercel, menimpa versi lama.
-2. Deploy/redeploy di Vercel.
-3. Buka website pada dua browser atau perangkat berbeda.
-4. Ketuk tombol dzikir pada masing-masing perangkat. Angka “X orang sedang berdzikir” akan tersinkron setelah koneksi Realtime tersambung.
+✨ **Project Highlights**
+- Digital tasbih counter for daily dhikr
+- Simple and user-friendly interface
+- Designed for a convenient mobile experience
+- An ongoing digital creativity project
 
-Definisi hitungan:
-- Angka menghitung sesi browser yang baru melakukan hitungan dzikir dalam dua menit terakhir, bukan memverifikasi bahwa seseorang benar-benar sedang mengucapkan dzikir.
-- Setiap tab/perangkat dihitung sebagai sesi terpisah.
-- Saat koneksi terputus atau tab ditutup, jumlah dapat memerlukan beberapa saat untuk menyinkronkan status leave.
+This project is part of my journey in building useful digital products through creativity, experimentation, and AI-assisted development.
 
-Jika status menunjukkan koneksi tidak tersedia:
-- Pastikan project Supabase dalam keadaan aktif.
-- Pastikan Realtime tidak dinonaktifkan/dibatasi.
-- Periksa Console browser untuk pesan jaringan atau konfigurasi.
+**Built with purpose. Designed for simplicity.**
 
-Dokumentasi:
-https://supabase.com/docs/guides/realtime/presence
-https://supabase.com/docs/guides/realtime/limits
